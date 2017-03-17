@@ -7,7 +7,7 @@
 		
 		1.先 npm install,加载依赖
 
-		2.bower intall 加载angular文件等依赖
+		2.bower install 加载angular文件等依赖
 
 		3. 依赖加载完之后，在命令行输入 npm test,就会自动打开网站。
 
