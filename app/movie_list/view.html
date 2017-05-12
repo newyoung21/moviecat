@@ -24,13 +24,14 @@
 		</div>
 	</li>
 </div>
-<p class="total">
+<p class="total" ng-show="dd">
 	总共{{total}}条记录，第{{currentPage}}/{{totalPages}}页
 </p>
-<ul class="pager">
+<ul class="pager" ng-show="dd">
     <li ng-class="{disabled:currentPage<=1}"><a ng-click="go(currentPage - 1)">上一页</a></li>
     <li ng-class="{disabled:currentPage===totalPages}"><a ng-click="go(currentPage + 1)">下一页</a></li>
 </ul>
+
 <div class="fiexd" ng-show="loading">
 	<div class="sk-cube-grid ">
 	  <div class="sk-cube sk-cube1"></div>

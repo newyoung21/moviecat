@@ -16,6 +16,7 @@
   				page = parseInt($routeParams.page),
   				count=4,
   				start=(page-1)*count;
+        $scope.dd = false;
   			$scope.currentPage = page;
   			$scope.loading = true;
   			HttpServices.jsonp(url,{
@@ -28,6 +29,7 @@
   				$scope.total = data.total;
   				$scope.totalPages = Math.ceil($scope.total/count);
   				$scope.loading = false;
+          $scope.dd = true;
   				$scope.$apply();
   			});
 
